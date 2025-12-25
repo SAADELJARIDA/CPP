@@ -75,13 +75,13 @@ std::string	getInfo(const std::string& message)
 		if (message == "Phone Number" && unvalidNumber(info))
 		{
 			std::cout << "\nERROR: " << info <<  " Invalid " << message << "!!!" << std::endl;
-			std::cout << "Phone numbers can only contain digits, spaces and hyphens.\n" << std::endl;
+			std::cout << "Phone numbers can only contain digits, spaces (in between) and hyphens.\n" << std::endl;
 			info.clear();
 		}
 		else if ((message != "Darkest Secret" && message != "Phone Number" && unvalidName(info)))
 		{
 			std::cout << "\nERROR: " << info <<  " Invalid " << message << "!!!" << std::endl;
-			std::cout << "Names can only contain letters, spaces and hyphens.\n" << std::endl;
+			std::cout << "Names can only contain letters, spaces (in between) and hyphens.\n" << std::endl;
 			info.clear();
 		}
 

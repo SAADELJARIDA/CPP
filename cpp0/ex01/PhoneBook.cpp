@@ -33,7 +33,7 @@ int	PhoneBook::showPhonebook(void)
 		std::cout << "\nNo contacts in record. Please ADD a contact first ! \n" << std::endl;
 		return 0;
 	}
-	std::cout << "+----------+----------+----------+----------+" << std::endl;
+	std::cout << "\n+----------+----------+----------+----------+" << std::endl;
 	std::cout << "|   INDEX  |FIRST NAME| LAST NAME| NICKNAME |" << std::endl;
 	for (int i = 0; i < _i; i++)
 	{
@@ -45,7 +45,7 @@ int	PhoneBook::showPhonebook(void)
 				  << "|" << std::endl;
 		// std::cout << "Darkest Secret: " << _contacts[i].getDarkestSecret() << std::endl;
 	}
-	std::cout << "+----------+----------+----------+----------+" << std::endl;
+	std::cout << "+----------+----------+----------+----------+\n" << std::endl;
 
 	return (1);
 }
